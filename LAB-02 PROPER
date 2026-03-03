@@ -429,4 +429,17 @@ MariaDB [arpita]> SELECT * FROM grades WHERE Name LIKE 'a___';
 +------------+------+-------+---------+--------------+---------------+------+------------+
 1 row in set (0.001 sec)
 
-MariaDB [arpita]>
+MariaDB [arpita]> SELECT Name, Project_marks + Days_present*5/12 from grades;
++---------+-----------------------------------+
+| Name    | Project_marks + Days_present*5/12 |
++---------+-----------------------------------+
+| Abir    |                      22.666666666 |
+| Nafis   |                                25 |
+| Tasneem |                      21.333333333 |
+| Naheed  |                      18.916666666 |
+| Arafat  |                      24.583333333 |
+| Tasneem |                              22.5 |
+| Muhtadi |                      23.166666666 |
+| Farhana |                              17.5 |
++---------+-----------------------------------+
+8 rows in set (0.002 sec)
